@@ -1,20 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
 <center>
-<div class="card">
-<h2>Add Student</h2>
+  <div class="page-wrapper">
+  <div class="left-bg"></div>
+  <div class="card" style="max-width: 600px;">
+    <h2>Add Student</h2>
 
-<form method="POST"
-      onsubmit="return confirm('Do you want to add this student?')">
+    <form method="POST" onsubmit="return confirm('Do you want to add this student?')">
 
-    Name:   <input type="text" name="sname" required><br><br>
-    Branch: <input type="text" name="sbranch" required><br><br>
-    Marks:  <input type="number" name="smarks" required><br><br>
-    Phone:  <input type="text" name="phno" required><br><br>
+      Name: <input type="text" name="sname" required>
+      Branch: <input type="text" name="sbranch" required>
+      Marks: <input type="number" name="smarks" required>
+      Phone: <input type="text" name="phno" required>
 
-    <button type="submit">Add Student</button>
-</form>
+      <button type="submit">Add Student</button>
+    </form>
 
 
-</center></div>
+</center>
+</div></div>
 {% endblock %}

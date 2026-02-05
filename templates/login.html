@@ -2,19 +2,22 @@
 {% block title %}Login{% endblock %}
 
 {% block content %}
-<center><div class="card">
-<h2>Login</h2>
+<center>
+    <div class="page-wrapper">
+    <div class="left-bg"></div>
+    <div class="card" style="max-width: 600px;">
+        <h2>Login</h2>
 
-<form method="post">
-    Username<input type="text" name="username" required>
+        <form method="post">
+            Username<input type="text" name="username" required>
+            Password<input type="password" name="password" required>
+            <button class="btn">Login</button>
+        </form>
 
-    Password<input type="password" name="password" required>
-
-    <button class="btn">Login</button>
-</form>
-
-<p style="text-align:center;margin-top:10px;">
-    <a href="{{ url_for('forgot') }}">Forgot Password?</a><br>
-    New user? <a href="{{ url_for('register') }}">Register</a>
-</p></center></div>
+        <p style="text-align:center;margin-top:10px;">
+            <a href="{{ url_for('forgot') }}">Forgot Password?</a><br>
+            New user? <a href="{{ url_for('register') }}">Register</a>
+        </p>
+</center>
+</div></div>
 {% endblock %}

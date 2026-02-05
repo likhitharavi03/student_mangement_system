@@ -1,33 +1,36 @@
 {% extends "base.html" %}
 {% block content %}
 <center>
-<div class="card">
-    <!-- FLASH MESSAGE -->
-    {% with messages = get_flashed_messages(with_categories=true) %}
+    <div class="page-wrapper">
+    <div class="left-bg"></div>
+    <div class="card" style="max-width: 600px;">
+        <!-- FLASH MESSAGE -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
-            {% for category, msg in messages %}
-                <div class="alert {{ category }}">
-                    {{ msg }}
-                </div>
-            {% endfor %}
+        {% for category, msg in messages %}
+        <div class="alert {{ category }}">
+            {{ msg }}
+        </div>
+        {% endfor %}
         {% endif %}
-    {% endwith %}
+        {% endwith %}
 
-    <h2>Contact Us</h2>
+        <h2>Contact Us</h2>
 
-    <form method="post">
-        Name<br>
-        <input type="text" name="name" required><br><br>
+        <form method="post">
+            Name
+            <input type="text" name="name" required>
 
-        Email<br>
-        <input type="email" name="email" required><br><br>
+            Email
+            <input type="email" name="email" required>
 
-        Message<br>
-        <textarea name="message" rows="4" required></textarea><br><br>
+            Message
+            <textarea name="message" rows="3" required></textarea>
 
-        <button type="submit" class="btn">Send Message</button>
-    </form>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
 
 
-</center></div>
+</center>
+</div></div>
 {% endblock %}

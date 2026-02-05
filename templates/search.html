@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
 <center>
-<div class="card">
+<div class="page-wrapper">
+<div class="left-bg"></div>
+<div class="card" style="max-width: 600px;">
 <h2>Search Student</h2>
 
 <form method="POST">
@@ -12,5 +14,5 @@
 <br>
 <a href="{{ url_for('dashboard') }}">⬅ Back to Dashboard</a>
 
-</center></div>
+</center></div></div>
 {% endblock %}

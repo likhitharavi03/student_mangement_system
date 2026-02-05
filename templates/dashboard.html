@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 <center>
-<div class="card">
+<div class="page-wrapper">
+<div class="left-bg"></div>
+<div class="card" style="max-width: 600px;">
 <h2>Dashboard</h2>
-
 <a href="{{ url_for('search') }}">
     <button>Search Student</button>
 </a>
-
 <table>
 <tr>
     <th>Name</th>
@@ -40,5 +40,5 @@
 
 </table>
 
-</center></div>
+</center></div></div>
 {% endblock %}
