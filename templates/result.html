@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<center>
+<div class="card">
+<h2>Search Results</h2>
+
+{% if students %}
+<table>
+<tr>
+    <th>Name</th>
+    <th>Branch</th>
+    <th>Marks</th>
+    <th>Phone</th>
+</tr>
+
+{% for s in students %}
+<tr>
+    <td>{{ s.sname }}</td>
+    <td>{{ s.sbranch }}</td>
+    <td>{{ s.smarks }}</td>
+    <td>{{ s.phno }}</td>
+</tr>
+{% endfor %}
+</table>
+{% else %}
+<p>No students found</p>
+{% endif %}
+
+<br>
+<a href="{{ url_for('dashboard') }}">
+    <button>Back to Dashboard</button>
+</a>
+
+
+</center></div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<center>
+<div class="card">
+<h2>Edit Student</h2>
+
+<form method="POST"
+      onsubmit="return confirm('Do you want to update this student?')">
+
+    Name:
+    <input type="text" value="{{ student.sname }}">
+
+    Branch:
+    <input type="text" value="{{ student.sbranch }}" >
+
+    Marks:<input type="number" name="smarks"
+           value="{{ student.smarks }}" required>
+
+    Phone:<input type="text" value="{{ student.phno }}" >
+
+    <button type="submit">Update</button>
+</form>
+</center></div>
+{% endblock %}

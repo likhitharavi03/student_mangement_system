@@ -1,0 +1,168 @@
+/* =====================
+   GLOBAL
+===================== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #86f879;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:blue ;
+    padding: 8px 20px;        /* 🔹 controls navbar height */
+}
+
+/* Left side (logo + app name) */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.app-name {
+    color: #ffffff;
+    font-size: 16px;         /* 🔹 resize title */
+    font-weight: bold;
+}
+
+/* Right side links */
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 16px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-right a:hover {
+    text-decoration: underline;
+}
+
+/* =====================
+   PAGE CONTENT
+===================== */
+.container,
+.content {
+    padding: 30px;
+}
+
+/* =====================
+   CARD
+===================== */
+.card {
+    width: 500px;
+    padding: 30px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Wider card (dashboard table) */
+.card.wide {
+    width: 900px;
+}
+
+/* =====================
+   FORMS
+===================== */
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background:rgb(247, 6, 146);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* =====================
+   TABLE
+===================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background:deeppink;
+    color: #ffffff;
+}
+
+/* =====================
+   FLASH MESSAGES
+===================== */
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.alert.success {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.alert.error {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.alert.warning {
+    background: #fff3cd;
+    color: #856404;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+    text-align: center;
+    padding: 12px;
+    background:blue;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
